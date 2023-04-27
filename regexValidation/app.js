@@ -17,10 +17,3 @@ inputPostalCode.addEventListener("keyup", (e) => {
     inputPostalCode.classList.add('is-invalid');
   }
 });
-
-// IBAN-Validierung 
-// const ibanGermany = /^DE[0-9]{20}$/;
-
-
-// E-Mail-Validierung 
-// const emailAdress = /^[A-Z0-9+_.-]+@[A-Z0-9+.-]+$/;
