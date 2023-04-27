@@ -1,12 +1,11 @@
 const validatePostalCode = postalCode => {
   const postalCodeRegex = /^[1-9][0-9]{4}$/;
-  return postalCodeRegex.test(postalCode.toUpperCase());  
+  return postalCodeRegex.test(postalCode);  
 }
 
 const inputPostalCode = document.querySelector("#input-postal-code");
 
 inputPostalCode.addEventListener("keyup", (e) => {
-  e.preventDefault();
   const postalCode = e.target.value;
   if (validatePostalCode(postalCode)) {
     inputPostalCode.classList.remove('is-invalid');
